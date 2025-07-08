@@ -1,8 +1,17 @@
 # Docker container for GroupSession, groupware
 
-It includes the followings:
+This is a private fork of the following repository:
 
-* AdoptOpenJDK 12 OpenJ9
-* Tomcat 9
+- [poppen/dockerfile-groupsession](https://github.com/poppen/dockerfile-groupsession)
 
-For the information about GroupSession, see https://groupsession.jp/
+## Dev notes
+
+```bat
+docker build -t kenjiuno/groupsession:5.7.1 .
+docker run -p 8080:8080 -it kenjiuno/groupsession:5.7.1
+docker push kenjiuno/groupsession:5.7.1
+```
+
+Navigate to: http://127.0.0.1:8080/gsession/
+
+`admin:admin`
